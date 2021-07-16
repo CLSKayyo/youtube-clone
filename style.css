@@ -1,0 +1,390 @@
+/* Roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body{
+    background-color: #181818;
+    color: #FFFFFF;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+aside p{
+    padding: 10px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+aside p a{
+    text-decoration: underline;
+}
+
+nav{
+    background-color: #202020;
+    margin: 0;
+    padding: 14px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 19;
+}
+
+nav .links{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 20px;
+}
+
+nav a.hamburger-btn{
+    font-size: 25px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+nav a.brand{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+nav a.brand i{
+    color: #FF0000;
+    font-size: 26px;
+}
+
+nav a.brand sup{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+nav form{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+
+
+nav form input{
+    background-color: #121212;
+    color: #818181;
+    border: solid 1px #323232;
+    font-size: 18px;
+    height: 30px;
+    margin: 0;
+    width: 90%;
+}
+
+nav form button{
+    background-color: #323232;
+    color: #818181;
+    border: none;
+    border: solid 1px #323232;
+    font-size: 16px;
+    height: 34px;
+    margin: 0;
+    width: 10%;
+}
+
+a.mobile-search{
+    display: none;
+}
+
+form.mobile{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+form.mobile input{
+    background-color: #121212;
+    color: #818181;
+    border: solid 1px #323232;
+    font-size: 18px;
+    height: 30px;
+    margin: 0;
+    width: 80%;
+}
+
+form.mobile button{
+    background-color: #323232;
+    color: #818181;
+    border: none;
+    border: solid 1px #323232;
+    font-size: 16px;
+    height: 34px;
+    margin: 0;
+    width: 10%;
+}
+
+@media (max-width: 800px){
+    nav form{
+        display: none;
+    }
+    
+    main{
+        padding: 10px;
+    }
+
+    a.mobile-search{
+        display: inherit;
+    }
+}
+
+aside.desktop{
+    position: fixed;
+    top: 62px;
+    left: 0px;
+    height: calc(100% - 62px);
+    width: 240px;
+    background-color: #202020;
+    overflow-y: auto;
+}
+
+aside.mobile{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 240px;
+    background-color: #202020;
+    overflow-y: auto;
+    z-index: 20;
+}
+
+aside.mobile .links{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 20px;
+    padding: 10px 0 10px 20px;
+    border-bottom: 1px solid #323232;
+}
+
+aside.mobile .links a.hamburger-btn{
+    font-size: 25px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+aside.mobile .links a.brand{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+aside.mobile .links a.brand i{
+    color: #FF0000;
+    font-size: 26px;
+}
+
+aside.mobile .links a.brand sup{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+aside.resumo{
+    display: none;
+}
+
+aside.resumo ul{
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    border: none;
+}
+
+aside.resumo ul li{
+    width: 100%;
+    height: 60px;
+    list-style: none;
+    padding: 0;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+aside.resumo ul li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    text-align: center;
+}
+
+aside.resumo ul li a i{
+    margin: 0 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 1080px){
+    aside.desktop{
+        display: none;
+    }
+
+    aside.resumo{
+        display: initial;
+        position: fixed;
+        top: 62px;
+        left: 0px;
+        height: calc(100% - 62px);
+        width: 72px;
+        background-color: #202020;
+    }
+}
+
+@media (max-width: 800px){
+    aside.resumo{
+        display: none;
+    }
+}
+
+aside ul{
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #323232;
+}
+
+aside ul li{
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+aside ul li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+aside ul li:hover{
+    background-color: #323232;
+}
+
+aside ul li a i{
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+aside h3{
+    padding: 8px 24px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #818181;
+}
+
+aside h3 + ul{
+    padding-top: 0;
+}
+
+main{
+    margin-left: 240px;
+    padding: 30px;
+}
+
+@media (max-width: 1080px){
+    main{
+        margin-left: 72px;
+    }
+}
+
+@media (max-width: 800px){
+    main{
+        margin-left: 0px;
+    }
+}
+
+main section.inicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 1080px){
+    main section.inicio{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px){
+    main section.inicio{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px){
+    main section.inicio{
+        grid-template-columns: 1fr;
+    }
+}
+
+main section .video-thumb img.thumb{
+    width: 100%;
+}
+
+main section .video-thumb .content{
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 20px;
+}
+
+main section .video-thumb .content img.user{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+
+main section .video-thumb .content .data{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+main section .video-thumb .content .data h4{
+    margin: 15px 0 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+main section .video-thumb .content .data span,
+main section .video-thumb .content .data small{
+    font-size: 14px;
+    color: #AAAAAA;
+    margin: 0;
+    padding: 0;
+}

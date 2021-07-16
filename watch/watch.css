@@ -1,0 +1,214 @@
+@media (max-width: 1080px){
+    aside.resumo{
+        display: none !important;
+    }
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+main div.video iframe{
+    width: 100%;
+    height: 480px;
+    border: none;
+}
+
+@media (max-width: 1080px){
+    main{
+        grid-template-columns: 1fr;
+        margin-left: 0 !important;
+    }
+
+    main div.video iframe{
+        height: calc((100vw - 60px) * (9/16));
+    }
+}
+
+@media (max-width: 800px){
+    main{
+        padding: 10px;
+    }
+
+    main div.video iframe{
+        height: calc((100vw - 20px) * (9/16));
+    }
+}
+
+main div.video h1{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main div.video .content{
+    border-bottom: solid 1px #323232;
+}
+
+main div.video .content .estatisticas{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    color: #909090;
+}
+
+main div.video .content .estatisticas small{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+main div.video .content .estatisticas .likes{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: solid 2px #3B9DF1;
+}
+
+main div.video .content .estatisticas a{
+    color: #909090;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main div.video .content .estatisticas a i{
+    font-size: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 800px){
+    main div.video .content .estatisticas{
+        grid-template-columns: 2fr 1fr;
+    }
+    main div.video .content .estatisticas a.share,
+    main div.video .content .estatisticas a.save{
+        display: none;
+    }
+}
+
+main div.video .content .estatisticas a.share{
+    text-align: right;
+    text-transform: uppercase;
+}
+
+main div.video .content .estatisticas a.save{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main div.video .info{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main div.video .info .user{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 20px;
+}
+
+main div.video .info .user img{
+    border-radius: 50%;
+}
+
+main div.video .info .user h3{
+    font-size: 14px;
+    padding: 0;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+main div.video .info .user small{
+    font-size: 12px;
+    color: #909090;
+}
+
+main div.video .info button{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    background-color: #CC0000;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding: 13px 16px;
+    height: fit-content;
+}
+
+main div.video .info button:hover{
+    cursor: pointer;
+}
+
+main div.video .descricao{
+    padding: 20px 48px;
+    border-bottom: solid 1px #323232;
+    max-height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (max-width: 800px){
+    main div.video .descricao{
+        padding: 20px 20px;
+    }
+}
+
+main div.video .descricao p{
+    font-size: 14px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+main div.video .descricao .mostrar-mais{
+    position: absolute;
+    bottom: 0;
+    background-color: #181818;
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+}
+
+main div.video .descricao .mostrar-mais a{
+    text-transform: uppercase;
+    color: #909090;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+main .relacionados .listed-video{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+main .relacionados .listed-video img{
+    width: 100%;
+}
+
+main .relacionados .listed-video .video-list-info{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+}
+
+main .relacionados .listed-video .video-list-info h4{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+main .relacionados .listed-video .video-list-info span,
+main .relacionados .listed-video .video-list-info small{
+    font-size: 13px;
+    width: 100%;
+    color: #909090;
+    padding: 5px 0 0 0;
+    margin: 0;
+}
